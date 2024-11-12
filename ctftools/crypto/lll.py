@@ -24,4 +24,4 @@ def subset_sum_problem(S, t, verbose=False):
             if all(y in [-1, 1] for y in Y):
                 # -1 -> 1, 1 -> 0
                 return [(1 - x) // 2 for x in Y]
-        assert False, "no solution"
+        return None
