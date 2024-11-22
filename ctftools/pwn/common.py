@@ -1,5 +1,8 @@
 from pwn import *
 
+# split horizontally
+context.terminal = ["tmux", "splitw", "-h"]
+
 
 def connect(exe, host, port):
     context.binary = exe.path
